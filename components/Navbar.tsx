@@ -8,7 +8,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="w-full h-20 bg-gray-700 flex_center shadow-md text-white">
+    <header className="w-full h-20 bg-gray-700 flex_center shadow-md text-gray-50">
       <nav className="wrapper flex_center relative">
         <div className="hidden md:block">
           <Link href="/" className="uppercase font-semibold tracking-wider">
