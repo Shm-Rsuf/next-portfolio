@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+  @apply container mx-auto px-5 lg:px-0;
+}
+
+.flex_center {
+  @apply flex justify-between items-center;
+}
