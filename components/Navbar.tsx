@@ -17,16 +17,16 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <ul className="flex gap-5">
-            <li>
+            <li className="hover:bg-gray-800 px-2 py-1 rounded-md duration-500 cursor-pointer">
               <Link href="/projects">Projects</Link>
             </li>
-            <li>
+            <li className="hover:bg-gray-800 px-2 py-1 rounded-md duration-500 cursor-pointer">
               <Link href="/skills">Skills</Link>
             </li>
-            <li>
+            <li className="hover:bg-gray-800 px-2 py-1 rounded-md duration-500 cursor-pointer">
               <Link href="/about">About</Link>
             </li>
-            <li>
+            <li className="hover:bg-gray-800 px-2 py-1 rounded-md duration-500 cursor-pointer">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
@@ -59,7 +59,7 @@ const Navbar = () => {
         <nav className="md:hidden">
           <div
             onClick={() => setToggle((prev) => !prev)}
-            className={`w-screen h-screen fixed z-[98]  top-0 bg-gray-700 left-0 right-0 bottom-0 flex justify-center items-center `}
+            className={`w-screen h-screen fixed z-[98]  top-0 bg-gray-700 left-0 right-0 bottom-0 flex justify-center items-center`}
           >
             <div className="space-y-5">
               <ul className="flex gap-5 flex-col items-start">
@@ -70,7 +70,7 @@ const Navbar = () => {
                   <Link href="/skills"> Skills</Link>
                 </li>
                 <li>
-                  <Link href="/about"> About</Link>
+                  <Link href="/#about"> About</Link>
                 </li>
                 <li>
                   <Link href="/contact">Contact</Link>
