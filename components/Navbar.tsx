@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <header className="w-full h-20 bg-gray-700 flex_center shadow-md text-gray-50">
-      <nav className="wrapper flex_center relative">
+      <nav className="wrapper flex_between relative">
         <div className="hidden md:block">
           <Link href="/" className="uppercase font-semibold tracking-wider">
             Usuf Ali
@@ -42,10 +42,10 @@ const Navbar = () => {
 
         {/* *************** */}
         {/* toogle button */}
-        <div className="flex_center md:hidden absolute right-3">
+        <div className="flex_center md:hidden absolute right-0 top-0 bottom-0 -translate-x-1/2 -translate-y-1/2 z-[99]">
           <button
             onClick={() => setToggle((prev) => !prev)}
-            className="text-3xl  z-[99]"
+            className="text-3xl"
           >
             {toggle ? <AiOutlineClose /> : <FiMenu />}
           </button>

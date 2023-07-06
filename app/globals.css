@@ -7,5 +7,8 @@
 }
 
 .flex_center {
+  @apply flex justify-center items-center;
+}
+.flex_between {
   @apply flex justify-between items-center;
 }
