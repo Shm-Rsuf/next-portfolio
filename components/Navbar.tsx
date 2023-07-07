@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="flex_center md:hidden absolute right-0 top-0 bottom-0 -translate-x-1/2 -translate-y-1/2 z-[99]">
           <button
             onClick={() => setToggle((prev) => !prev)}
-            className="text-3xl"
+            className="text-4xl"
           >
             {toggle ? <AiOutlineClose /> : <FiMenu />}
           </button>
@@ -59,7 +59,7 @@ const Navbar = () => {
         <nav className="md:hidden">
           <div
             onClick={() => setToggle((prev) => !prev)}
-            className={`w-screen h-screen fixed z-[98]  top-0 bg-gray-700 left-0 right-0 bottom-0 flex justify-center items-center`}
+            className={`w-screen h-screen fixed z-[98]  top-0 bg-gray-700/70 left-0 right-0 bottom-0 flex justify-center items-center`}
           >
             <div className="space-y-5">
               <ul className="flex gap-5 flex-col items-start">
