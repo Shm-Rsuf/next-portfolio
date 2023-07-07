@@ -12,3 +12,10 @@
 .flex_between {
   @apply flex justify-between items-center;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}

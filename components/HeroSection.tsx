@@ -9,24 +9,35 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
 
+import { data } from "@/data/db";
+import Image from "next/image";
+
 const HeroSection = () => {
   return (
-    <section className="w-full h-[60vh] bg-yellow-500">
+    <section className="w-full h-[75vh] pt-[2px]">
       <>
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
-          className="mySwiper"
+          className="mySwiper w-full h-full"
           loop={true}
           grabCursor={true}
-          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
+          {data?.map((values) => (
+            <SwiperSlide key={values.id}>
+              <div>
+                <Image
+                  src={values.src}
+                  alt={values.alt}
+                  height={1920}
+                  width={1080}
+                  priority
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </>
     </section>
