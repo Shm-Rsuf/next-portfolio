@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 
 import { data } from "@/data/db";
 import Image from "next/image";
@@ -18,11 +18,12 @@ const HeroSection = () => {
       <>
         <Swiper
           navigation={true}
-          modules={[Navigation, Autoplay]}
+          modules={[Navigation, Autoplay, Pagination]}
           className="mySwiper w-full h-full"
           loop={true}
           grabCursor={true}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
         >
           {data?.map((values) => (
             <SwiperSlide key={values.id}>

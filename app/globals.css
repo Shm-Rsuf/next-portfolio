@@ -19,3 +19,11 @@
   fill: #ffffff !important;
   stroke: #ffffff !important;
 }
+
+.swiper-pagination-bullet {
+  background-color: #38bdf8 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #38bdf8 !important;
+}
