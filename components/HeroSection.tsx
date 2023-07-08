@@ -27,7 +27,7 @@ const HeroSection = () => {
         >
           {data?.map((values) => (
             <SwiperSlide key={values.id}>
-              <div>
+              <div className="w-full h-full">
                 <Image
                   src={values.src}
                   alt={values.alt}

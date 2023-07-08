@@ -1,5 +1,11 @@
+import SectionHeading from "@/components/SectionHeading";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <section>
+      <SectionHeading text="projects" />
+    </section>
+  );
 };
 
 export default Projects;
