@@ -1,5 +1,5 @@
 const Skills = () => {
-  return <div>Skills</div>;
+  return <div className="min-h-screen">Skills</div>;
 };
 
 export default Skills;

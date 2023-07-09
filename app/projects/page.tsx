@@ -2,7 +2,7 @@ import SectionHeading from "@/components/SectionHeading";
 
 const Projects = () => {
   return (
-    <section>
+    <section className="min-h-screen">
       <SectionHeading text="projects" />
     </section>
   );

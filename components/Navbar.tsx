@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <Link
-            href="https://drive.google.com/file/d/1FxQvlSuwnGXLJKVNeJMQ8fLpnj-SlQQX/view"
+            href="https://drive.google.com/file/d/1YOp0O-dvsRT6ehP04r0UJnBaIrI_jcDK/view?usp=sharing"
             target="_blank"
           >
             <Button text={"My Resume"} />
@@ -77,7 +77,7 @@ const Navbar = () => {
                 </li>
               </ul>
               <Link
-                href="https://drive.google.com/file/d/1FxQvlSuwnGXLJKVNeJMQ8fLpnj-SlQQX/view"
+                href="https://drive.google.com/file/d/1YOp0O-dvsRT6ehP04r0UJnBaIrI_jcDK/view?usp=sharing"
                 target="_blank"
                 className="inline-block"
               >
